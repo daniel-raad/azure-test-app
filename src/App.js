@@ -21,17 +21,10 @@ function App() {
   return (
     <div className="App">
     <NavbarExternal tabNumber={tabNumber} setTabNumber={setTabNumber} />
-    {tabNumber === 1 &&
-    <>
-      <LiveBox eventLink={link} eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
-      <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
-      <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
-    </>
-    }
-
+    
     {tabNumber === 0 &&
     <>
-    <LiveBox eventLink={link} eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
+    <LiveBox eventLink={link} eventTitle="Make the most of your cashback" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
     <Typography sx={{
         color: '#000',
         fontFamily: 'Open Sans',
@@ -44,17 +37,24 @@ function App() {
       }}>
         Upcoming
       </Typography>
-      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
-      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Loans" tagline="Financial Products" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Club Lloyds" tagline="Account Features | Account Benefits" eventDateTime="December 1st 4pm" />
+    </> 
+    }
+
+    {tabNumber === 1 &&
+    <>
+      <LiveBox eventLink={link} eventTitle="Make the most of your cashback" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
+      <LiveBox eventLink={link2} eventTitle="Support for cost of living" tagline="Cost Of Living" users="15" presenter="Daniel R - Account Specialist" />
+      <LiveBox eventLink={link2} eventTitle="App benefits" tagline="Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
     </>
-      
     }
 
     {tabNumber === 2 && 
     <>
-      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
-      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
-      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Club Lloyds" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Loans" tagline="Financial Products" eventDateTime="December 2nd 4pm" />
+      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 3rd 4pm" />
       </>
     }
       
