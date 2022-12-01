@@ -44,7 +44,7 @@ const LiveBox = ({ eventTitle, tagline, users, presenter, eventLink }) => {
             textAlign: 'left',
             marginBottom: 1,
           }}
-          href={link}
+          href={eventLink}
         >
           {eventTitle}
         </Link>
