@@ -7,10 +7,12 @@ import Typography from '@mui/material/Typography';
 
 import LiveBox from './Components/LiveBox';
 import UpcomingBox from './Components/UpcomingBox';
+import NavbarExternal from './Components/NavbarExternal';
 
 function App() {
   return (
     <div className="App">
+    <NavbarExternal />
       <LiveBox eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
       <LiveBox eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
       <Typography sx={{
