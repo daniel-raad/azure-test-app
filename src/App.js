@@ -1,9 +1,10 @@
+import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 // import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import BottomNavigation from '@mui/material/BottomNavigation';
-import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+// import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 // import Link from '@mui/material/Link';
 // const link = 'https://mlgsapplication.azurewebsites.net/?groupId=842c1560-7174-11ed-8d50-85d682ce954a';
 
@@ -15,9 +16,11 @@ const link = 'https://mlgsapplication.azurewebsites.net/?groupId=842c1560-7174-1
 const link2 = 'https://mlgsapplication.azurewebsites.net/?groupId=80b57620-717d-11ed-8fde-b33ebe16bf5d';
 
 function App() {
+  const [tabNumber, setTabNumber] = React.useState(0);
+
   return (
     <div className="App">
-    <NavbarExternal />
+    <NavbarExternal tabNumber={tabNumber} setTabNumber={setTabNumber} />
       <LiveBox eventLink={link} eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
       <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
       <Typography sx={{
