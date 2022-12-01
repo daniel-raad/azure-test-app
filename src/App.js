@@ -7,7 +7,7 @@ function App() {
       {/* <header className="App-header"> */}
       {/* </header> */}
       <p>hello world</p>
-      <a href='https://mlgsapplication.azurewebsites.net/?groupId=c09eb3b0-7172-11ed-a16f-fd472cbb8d25'></a>
+      <a href='https://mlgsapplication.azurewebsites.net/?groupId=c09eb3b0-7172-11ed-a16f-fd472cbb8d25'>go to call</a>
     </div>
   );
 }
