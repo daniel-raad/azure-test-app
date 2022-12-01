@@ -21,9 +21,18 @@ function App() {
   return (
     <div className="App">
     <NavbarExternal tabNumber={tabNumber} setTabNumber={setTabNumber} />
+    {tabNumber === 1 &&
+    <>
       <LiveBox eventLink={link} eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
       <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
-      <Typography sx={{
+      <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" />
+    </>
+    }
+
+    {tabNumber === 0 &&
+    <>
+    <LiveBox eventLink={link} eventTitle="Club Lloyds" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
+    <Typography sx={{
         color: '#000',
         fontFamily: 'Open Sans',
         fontSize: '1.5rem',
@@ -36,6 +45,21 @@ function App() {
         Upcoming
       </Typography>
       <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+    </>
+      
+    }
+
+    {tabNumber === 2 && 
+    <>
+      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      <UpcomingBox eventTitle="Everyday Offers" tagline="Account Features | Money Saving" eventDateTime="December 1st 4pm" />
+      </>
+    }
+      
+      {/* <LiveBox eventLink={link2} eventTitle="Everyday Offers" tagline="Account Types | Account Benefits" users="15" presenter="Daniel R - Account Specialist" /> */}
+      
       <BottomNavigation
         sx={{
           backgroundColor: '#0C593B',
