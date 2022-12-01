@@ -7,6 +7,12 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.Mui-selected {
+  color: #fff !important;
+  font-weight: bold;
+  text-decoration: underline !important;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
