@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 const link = 'https://mlgsapplication.azurewebsites.net/?groupId=842c1560-7174-11ed-8d50-85d682ce954a';
 
-const LiveBox = () => {
+const LiveBox = ({ eventTitle, tagline, users, presenter }) => {
     return (
         <Box
         sx={{
@@ -25,7 +25,7 @@ const LiveBox = () => {
           marginBottom: 1,
         }}>
           {/* <FontAwesomeIcon style={{ marginRight: 10 }} icon={faVolumeHigh} /> */}
-          LIVE
+          LIVE NOW
         </Typography>
         <Typography sx={{
           color: '#fff',
@@ -45,7 +45,7 @@ const LiveBox = () => {
           }}
           href={link}
         >
-          Club Lloyds
+          {eventTitle}
         </Link>
         </Typography>
         <Typography sx={{
@@ -56,7 +56,7 @@ const LiveBox = () => {
           textAlign: 'left',
           marginBottom: 1,
         }}>
-          Account Types | Account Benefits
+          {tagline}
         </Typography>
         <Typography sx={{
           color: '#fff',
@@ -67,7 +67,7 @@ const LiveBox = () => {
           marginBottom: 4,
         }}>
           {/* <FontAwesomeIcon style={{ marginRight: 10 }} icon={faUser} /> */}
-          15 listening
+          {users} listening
         </Typography>
         <Typography sx={{
           color: '#fff',
@@ -77,7 +77,7 @@ const LiveBox = () => {
           textAlign: 'left',
           marginBottom: 1,
         }}>
-          Lloyd B - Personal Banker - Host
+          {presenter}
         </Typography>
       </Box>
     )
