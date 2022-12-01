@@ -10,15 +10,15 @@ function App() {
       <Box
       sx={{
         width: 300,
-        height: 300,
-        backgroundColor: 'primary.dark',
-        '&:hover': {
-          backgroundColor: 'primary.main',
-          opacity: [0.9, 0.8, 0.7],
-        },
+        height: 200,
+        backgroundColor: '#006A4D',
+        borderRadius: 5,
+        padding: 28,
       }}
-    />
+
+    >
       <a href='https://mlgsapplication.azurewebsites.net/?groupId=842c1560-7174-11ed-8d50-85d682ce954a'>go to call</a>
+    </Box>
     </div>
   );
 }
