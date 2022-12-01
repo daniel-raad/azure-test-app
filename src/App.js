@@ -23,7 +23,7 @@ function App() {
     <NavbarExternal tabNumber={tabNumber} setTabNumber={setTabNumber} />
     
     {tabNumber === 0 &&
-    <>
+    <div>
     <LiveBox eventLink={link} eventTitle="Make the most of your cashback" tagline="Account Types | Account Benefits" users="15" presenter="Ollie D - Personal Banker" />
     <Typography sx={{
         color: '#000',
@@ -39,7 +39,7 @@ function App() {
       </Typography>
       <UpcomingBox eventTitle="Loans" tagline="Financial Products" eventDateTime="December 1st 4pm" />
       <UpcomingBox eventTitle="Club Lloyds" tagline="Account Features | Account Benefits" eventDateTime="December 1st 4pm" />
-    </> 
+    </div> 
     }
 
     {tabNumber === 1 &&
