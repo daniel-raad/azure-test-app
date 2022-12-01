@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       {/* <header className="App-header"> */}
-      <NavbarExternal />
       {/* </header> */}
+      <p>hello world</p>
     </div>
   );
 }
