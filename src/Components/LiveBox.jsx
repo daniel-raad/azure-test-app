@@ -9,7 +9,7 @@ const LiveBox = ({ eventTitle, tagline, users, presenter, eventLink }) => {
         <Box
         sx={{
           width: 300,
-          height: 200,
+          height: 230,
           backgroundColor: '#006A4D',
           borderRadius: 5,
           margin: 4,
