@@ -1,13 +1,13 @@
-import React from 'react';
-import LiveBox from '../../Components/LiveBox';
+// import React from 'react';
+// import LiveBox from '../../Components/LiveBox';
 
-const ForYou = () => {
-    return (
-        <React.Fragment>
-            <LiveBox />
-        </React.Fragment>
+// const ForYou = () => {
+//     return (
+//         <React.Fragment>
+//             <LiveBox />
+//         </React.Fragment>
         
-    )
-}
+//     )
+// }
 
-export default ForYou;
+// export default ForYou;
