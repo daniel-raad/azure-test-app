@@ -2,8 +2,9 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 const link = 'https://mlgsapplication.azurewebsites.net/?groupId=842c1560-7174-11ed-8d50-85d682ce954a';
+const link2 = 'https://mlgsapplication.azurewebsites.net/?groupId=80b57620-717d-11ed-8fde-b33ebe16bf5d';
 
-const LiveBox = ({ eventTitle, tagline, users, presenter }) => {
+const LiveBox = ({ eventTitle, tagline, users, presenter, eventLink }) => {
     return (
         <Box
         sx={{
